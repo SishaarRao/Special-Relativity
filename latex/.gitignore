@@ -1,0 +1,3 @@
+# Ignore the Gitbash file
+
+/gitbash.sh*

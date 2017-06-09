@@ -176,6 +176,41 @@ This desyncrhonization between clocks A and B can be summarized with formulas
 \]
 \newpage
 \section{Synthesis of Lorentz Transformation}
+Suppose we are given the following situation
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=100mm]{lorentztransformation1}\par
+  \caption{Two reference frames witnessing 2 events}
+\end{figure}
+
+In this diagram, let \(\vec(v_1) = 0\) (Reference Frame A is at rest, Reference Frame B is moving with velocity \(\vec(v_2)\). Reference Frames A and B are synchronized such that Event 1 occurs at the same time in both frames.
+
+Within R.F. A, since its velocity is 0, Events 1 and 2 occur simultaenously. However, since R.F. B has velocity, the events do not occur simultaneously, and we need to apply the Desynchronization formula to determine the time difference. Note that we also need to apply the Time Dilation formula since B is moving and A is stationary.
+
+If we combine these two equations, we get
+\[
+  \Delta t_B = \frac{1}{\sqrt{1 - \beta^2}} \Delta t_A - \frac{L_A\frac{\vec{v}}{c^2}}{\sqrt{1 - \beta^2}}
+\]
+
+Let \(\gamma = \frac{1}{\sqrt{1 - \beta^2}}\)
+
+We can then reexpress the previous equation as
+\[
+  \Delta t_B = \gamma \Delta t_A - \gamma x \frac{v}{c^2}
+\]
+
+We can multiply through by c and define that as \(\tau_B\). Since Frame is moving with velocity, we also need to apply the length contraction formula. We can express this as \(\gamma x_B = x_A - vt\)
+
+To summarize
+\[
+  \tau_B = \gamma ( \tau_A - \beta x)
+\]
+
+
+and
+\[
+  x_B = \gamma (x_A - \beta \tau_A)
+\]
 
 
 \end{document}

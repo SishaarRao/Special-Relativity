@@ -88,5 +88,52 @@ In the reference frame where the clocks are both moving, the light pulse exposes
 \newpage
 \section{Length Contraction}
 
-Earlier, we demonstrated that the length of a stick moving perpendicular to its length and the length of an identical stationary stick are equal. However, the key takeaway from this is that this only applies when the stick is perpendicular. Here, we analyze what happens when we analyze a situation where a stick is moving parallel to its length. 
+Earlier, we demonstrated that the length of a stick moving perpendicular to its length and the length of an identical stationary stick are equal. However, the key takeaway from this is that this only applies when the stick is perpendicular. Here, we analyze what happens when we analyze a situation where a stick is moving parallel to its length.
+
+Suppose we are given a Light Clock in two scenarios as demonstrated by the figures below.
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=100mm]{lengthcontraction1}\par
+  \caption{Light Clock travelling Parallel to Length}
+\end{figure}
+
+Suppose the Light Clock has length \(L_0\). Thus, the time \(T_0\) between ticks of the light clock when \(\vec(v) = 0\) is \(\frac{2L_0}{c}\)
+
+However, if  \(\vec(v) \neq 0\) then the light has to travel a greater distance to hit the right side and a shorter distance to come back and hit the left side. The distance travelled by the light in stationary reference frame is \(cT_0\).
+
+When the box is not stationary, let us define three events:\newline
+Event 0: Light pulse reflects off the mirror at the left end.\newline
+Event 1: Light pulse reflects off the mirror at the right end.\newline
+Event 2: Light pulse reflects off at the mirror at the left end.\newline
+
+The times of occurences of these events are labeled \(t_0 t_1 t_2\). In the time between events 0 and 1, the clock moves a distance \(\vec{v}(t_1 - t_0)\) and the light pulse travels a distance \(c(t_1 - t_0)\). We can express this as
+\[
+  c(t_1 - t_0) = L + v(t_1 - t_0)
+\]
+
+Similarly for the time between events 1 and 2, we can express it as
+\[
+  c(t_2 - t_1) = L + v(t_2 - t_1)
+\]
+
+Using substitution to elimate \(t_1\), we can now express this as
+\[
+  t_2 - t_0 = \frac{\frac{2L}{c}}{1 - \frac{\vec{v}^2}{c^2}}
+\]
+
+Employing our Time Dilation equation to Events 0 and 2, we can state that
+\[
+  t_2 - t_0 = \frac{\frac{2L_0}{c}}{\sqrt{1 - \frac{\vec{v}^2}{c^2}}}
+\]
+
+By setting these equations equal to eachother and solving for L, we get that
+
+\[
+  L = L_0\sqrt{1 - \frac{\vec{v}^2}{c^2}}
+\]
+
+Note that this formula does not involve any properties of the stick but rather properties of space and time. 
+
+\newpage
+
 \end{document}

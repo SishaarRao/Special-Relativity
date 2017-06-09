@@ -135,5 +135,40 @@ By setting these equations equal to eachother and solving for L, we get that
 Note that this formula does not involve any properties of the stick but rather properties of space and time. 
 
 \newpage
+\section{Desynchronization}
+Suppose we are given two clocks, as demonstrated in the figure below.
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=100mm]{desync1}\par
+  \caption{Two clocks in different reference planes}
+\end{figure}
+
+In the top frame, the two clocks are at rest relative to eachother, separated by a distance \(L_0\).
+
+To synchronize these clocks there is a flashlamp on clock A (the left-hand clock) and a light-sensitive film on the face of clock B (the right-hand clock). The alarm on clock A is set to energize the flashlamp when the second hand on clock A passes zero. Like the conventional clock described previously, clock B has only a second hand, a rotating opaque disk with a slot to indicate the time. Behind the disk is a light-sensitive film. When the light from the flash reaches clock B, the film is illuminated on the narrow region behind the slot. This provides a lasting record of the reading on clock B when the light from the flashlamp reaches it. Let this reading be \(t_1\)
+
+In the rest frame of the clocks, the time for the light to travel at speed c from clock A
+to clock B is \(\frac{L_0}{c}\), so when the light arrives at clock B, clock A 0
+reads  \(\frac{L_0}{c}\) and clock B reads \(t_1\). To synchronize the two clocks, we turn Clock B back by \(\Delta t = t_1 - \frac{L_0}{c}\). We now want to determine whether or not this synchronization holds in a reference frame moving with velocity \(\vec(v)\).
+
+In frame 2 (the bottom frame) we know that the distance L from before is
+\[
+  L = L_0\sqrt{1 - \frac{\vec{v}^2}{c^2}}
+\]
+where Clock B is moving towards the flashlamp. In this frame, the light traveling from clock A to clock B travels a distance \(L - \vec{v}t\), where \(t\) is the time required for the light to travel the distance. We can equate this as \(ct = L - vt\). Solving for t gives us \(t = \frac{L}{c + \vec{v}}\)
+
+During time \(t\) the readings on both clocks advance not by t but by \(t\sqrt{1 - \frac{\vec{v}^2}{c^2}}\) where \(t = \frac{L}{c + \vec{v}}\).
+
+Substituting and simplifying gives us
+\[
+  \frac{L_0}{c} - \frac{vL_0}{c^2}
+\]
+
+Thus, when the light arrives at clock B, clock B reads \(\frac{L_0}{c}\) and clock A reads \(\frac{L_0}{c} - \frac{vL_0}{c^2}\). Therefore, in frame 2, clock B is ahead of clock A by \(\frac{vL_0}{c^2}\).
+
+
+We can summarize this as:\newline
+If two clocks that are moving with the same velocity are synchronized in their rest frame, then in a frame where they move with speed v parallel to the line joining them, the clock in the rear is ahead of the clock in front by \(\frac{vL_0}{c^2}\)
+
 
 \end{document}

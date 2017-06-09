@@ -1,5 +1,7 @@
 \documentclass{article}
 \usepackage{graphicx}
+\usepackage{amsmath}
+
 \graphicspath{ {images/} }
 
 \title{The Book of Special Relativity}
@@ -205,12 +207,44 @@ To summarize
 \[
   \tau_B = \gamma ( \tau_A - \beta x)
 \]
-
-
+and
+\[
+  x_B = \gamma (x_A - \beta \tau_A)
+\]
+\newpage
+\section{Using Hyperbolic Functions to Show a form of the Lorentz Transformation}
+We found the formulas for a Lorentz Transformation in the previous section
+\[
+  \tau_B = \gamma ( \tau_A - \beta x)
+\]
 and
 \[
   x_B = \gamma (x_A - \beta \tau_A)
 \]
 
+Let us now generalize these equations as
+\[
+  \begin{bmatrix} 
+    \tau_B \\
+    x_B
+  \end{bmatrix}
+=
+  \begin{bmatrix} 
+    a & b \\
+    c & d
+  \end{bmatrix}
+  \begin{bmatrix} 
+    \tau_A \\
+    x_A
+  \end{bmatrix}
+\]
 
+so we can express this as
+\[
+  \tau_B = a\tau_A + bx_A
+\]
+and 
+\[
+  x_b = c\tau_A + dx_A
+\]
 \end{document}

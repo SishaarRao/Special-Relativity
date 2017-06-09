@@ -321,7 +321,7 @@ We know the Spacetime Interval equation as defined above.
   (\Delta s)^2 = \tau^2 - (\Delta x^2 + \Delta y^2 + \Delta z^2)
 \]
 
-If events 1 and 2 occur at the location of the inertial clock, then they must have the same coordinates. Obviously. THEREFORE, \(\Delta X = 0\), \(\Delta y = 0\), and \(\Delta z = 0\).
+If events 1 and 2 occur at the location of the inertial clock, then they must have the same coordinates. Obviously. Therefore, \(\Delta X = 0\), \(\Delta y = 0\), and \(\Delta z = 0\).
 
 The equation thus simplifies to
 \[
@@ -353,5 +353,36 @@ If the Spacetime Interval is time-like, meaning that it only depends on time, th
 From this proof, we concluded that inertial clocks can measure the Spacetime Interval between two events that happen in the inertial clock's reference frame.
 
 If the two events are not at the same location in an inertial clock's reference frame, then it must move with a velocity such that the events will occur in the same location in the reference plane.
+
+What is this velocity? We can use the Lorentz Transformation matrix and the x in Frame B relative to the x in Frame A denoted by equation
+\[
+  x_b = \gamma (x_A - \vec{v} \Delta t_A)
+\]
+Judging from this equation, the only way the events can occur at the same location from the clock's reference frame is if \(x_b = 0\). We can use this fact to solve
+\[
+  \vec{v} = \frac{x_A}{\Delta t_A}
+\]
+
+By showing that we can find some velocity \(\vec{v}\) where the two events occur at the same location from the clock's reference frame, we can then state that it is possible to make this Spacetime interval ``time-like''. Remember, since location is the same \(\Delta X = 0\), \(\Delta y = 0\), and \(\Delta z = 0\). As a result, there is always an inertial clock to measure the time-like interval between two given events.
+\newpage
+\section{Rule to measure Space-like Spacetime Interval between two events}
+As we discussed before, if a Spacetime Interval is Space-like, then it is only dependent on spacial coordinates. We can summarize this with the equation
+\[
+  (\Delta s)^2 = -(\Delta x^2 + \Delta y^2 + \Delta z^2)
+\]
+We demonstrated that a ruler can measure the Spacetime Interval between two events that happen at the same time from a reference frame in which the ruler is at rest.
+
+Suppose two events do not occur at the same time in the ruler's reference frame. We can then hypothesize that the reference frame must move with some velocity \(\vec{v}\) where the events will indeed occur at the same time.
+
+To find this velocity \(\vec{v}\), we can once again apply the Lorentz Transformation equation, denoted by
+\[
+  \Delta t_B = \gamma (\Delta t_A - \frac{\vec{v}}{c^2} x_A)
+\]
+We set \(\Delta t_B = 0\) because the events are occuring at the same time. Therefore, we can solve the Transformation equation for the velocity
+\[
+  \vec{v} = \frac{c^2 \Delta t_A}{x_A}
+\]
+
+By showing that we can find some velocity \(\vec{v}\) where the two events occur at the same time from the ruler's reference frame, we can then state that it is possible to make this Spacetime interval ``space-like''. Remember, since time is the same \(\Delta t_B = 0\). As a result, there is always an inertial ruler to measure the space-like interval between two given events.
 
 \end{document}

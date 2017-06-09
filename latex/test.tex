@@ -329,9 +329,8 @@ The equation thus simplifies to
 \]
 
 Since this is solely dependent on time, we can use the inertial clock to measure the Spacetime interval between two events. God bless this one wasn't too hard.
-p
 \newpage
-\section{Inertial Rule measuring interval between events}
+\section{Inertial Ruler measuring interval between events}
 We know the Spacetime Interval equation as defined above.
 \[
   (\Delta s)^2 = \tau^2 - (\Delta x^2 + \Delta y^2 + \Delta z^2)
@@ -365,7 +364,7 @@ Judging from this equation, the only way the events can occur at the same locati
 
 By showing that we can find some velocity \(\vec{v}\) where the two events occur at the same location from the clock's reference frame, we can then state that it is possible to make this Spacetime interval ``time-like''. Remember, since location is the same \(\Delta X = 0\), \(\Delta y = 0\), and \(\Delta z = 0\). As a result, there is always an inertial clock to measure the time-like interval between two given events.
 \newpage
-\section{Rule to measure Space-like Spacetime Interval between two events}
+\section{Ruler to measure Space-like Spacetime Interval between two events}
 As we discussed before, if a Spacetime Interval is Space-like, then it is only dependent on spacial coordinates. We can summarize this with the equation
 \[
   (\Delta s)^2 = -(\Delta x^2 + \Delta y^2 + \Delta z^2)
@@ -384,5 +383,52 @@ We set \(\Delta t_B = 0\) because the events are occuring at the same time. Ther
 \]
 
 By showing that we can find some velocity \(\vec{v}\) where the two events occur at the same time from the ruler's reference frame, we can then state that it is possible to make this Spacetime interval ``space-like''. Remember, since time is the same \(\Delta t_B = 0\). As a result, there is always an inertial ruler to measure the space-like interval between two given events.
+\newpage
+\section{Velocity Addition Formula}
+Suppose we are given the following situation
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=100mm]{velocityaddition}\par
+  \caption{Two reference frames with a Dr. Dell as x moving with velocity}
+\end{figure}
 
+We previously found the Lorentz transformation as
+\[
+  \Delta t_B = \gamma (\Delta t_A - \frac{\vec{v}}{c^2} x_A)
+\]
+and
+\[
+  x_b = \gamma (x_A - \vec{v} \Delta t_A)
+\]
+We can use take the derivative of each equation relative to Dr. Dell to find \(dx_B\) and \(dt_B\)
+\[
+  \frac{d}{dx}(\Delta t_B) = \frac{d}{dx}(\gamma (\Delta t_A - \frac{\vec{v}}{c^2} x_A))
+\]
+\[
+  dt_B = \gamma (dt_A - \frac{\vec{v}}{c^2} dx_A)
+\]
+and
+\[
+  \frac{d}{dx}(x_b) = \frac{d}{dx}(\gamma (x_A - \vec{v} \Delta t_A))
+\]
+\[
+  dx_B = \gamma (dx_A - vdt_A)
+\]
+
+However, we can also state \(v_B = \frac{dx_B}{dt_B}\) and \(\vec{v} = v_c\) from diagram. Using this fact and substitution, we can get
+\[
+  v_B = \frac{v_A - \vec{v}}{1 - \frac{v_A \vec{v}}{c^2}}
+\]
+
+To find the velocity of our Dr. Dell from the reference frame (denoted by \(v_A\)), we can solve our equation and put it in terms of \(v_A\). This gives us
+\[
+  v_A = \frac{v_B + \vec{v}}{1 = \frac{v_B \vec{v}}{c^2}}
+\]
+If we definte \(\beta = \frac{v}{c}\) then we can rewrite the speed of Dr. Dell in reference frame A (where it's scaled by the factor of the speed of light c) as
+\[
+\beta_A = \frac{\beta_B + \beta_C}{1 + \beta_B \beta_C}
+\]
+\newpage
+\section{Doppler Shift}
+Consider a series of light pulses emitted from an inertial clock at regular time intervals (as measured by an inertial clock).
 \end{document}

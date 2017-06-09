@@ -213,107 +213,109 @@ and
 \]
 \newpage
 \section{Using Hyperbolic Functions to Show a form of the Lorentz Transformation}
-We found the formulas for a Lorentz Transformation in the previous section
-\[
-  \tau_B = \gamma ( \tau_A - \beta x)
-\]
-and
-\[
-  x_B = \gamma (x_A - \beta \tau_A)
-\]
-
-Let us now generalize these equations as
-\[
-  \begin{bmatrix} 
-    \tau_B \\
-    x_B
-  \end{bmatrix}
-=
-  \begin{bmatrix} 
-    a & b \\
-    c & d
-  \end{bmatrix}
-  \begin{bmatrix} 
-    \tau_A \\
-    x_A
-  \end{bmatrix}
-\]
-
-so we can express this as
-\[
-  \tau_B = a\tau_A + bx_A
-\]
-and 
-\[
-  x_b = c\tau_A + dx_A
-\]
-
-Spacetime Intervals are defined as a combination of distances in both space and time. In Special Relativity, it is invariant. Therefore, we can conclude
-\[
-  \tau_A^2 - x_A^2 = \tau_B^2 - x_B^2
-\]
-
-If we substitute in \(a\tau_A + bx_A\) and \(c\tau_A + dx_A\)
-\[
-  \tau_A^2 - x_A^2 = (a\tau_A + bx_A)^2 - (c\tau_A + dx_A)^2 \newline
-\]
-\[
-  \tau_A^2 - x_A^2 = (a^2 - c^2)\tau_A^2 + (2ab - 2cd)\tau_A x_A + (b^2 - d^2) x_A^2
-\]
-
-By observation, the only way for the equations to be able to equal eachother is if
-\[
-  (a^2 - c^2) = 1
-\]
-\[
-  (2ab - 2cd) = 0
-\]
-\[
-  (b^2 - d^2) = -1
-\]
-
-or some variation of this combination. \newline
-Let's let \(cosh(g)^2 - sinh(g)^2 = 1\) for \(a^2 - c^2 = 1\). \newline
-Let's let \(cosh(f)^2 - sinh(f)^2 = 1\) for \(d^2 - b^2 = 1\). \newline
-We can express \(cosh(g) = \frac{e^{-g} + e^{g}}{2}\) and \(sinh(g) = \frac{e^{-g} - e^{g}}{2}\) \newline
-We can express \(cosh(f) = \frac{e^{-f} + e^{f}}{2}\) and \(sinh(f) = \frac{e^{-f} - e^{f}}{2}\) \newline
-
-Plugging these representations of a, b, c, and d into the equation \(2ab - 2cd = 0\) yields
-\[
-  e^{f - g} = e^{g - f}
-\]
-Thus, f = g.
-
+\begin{center}
+  We found the formulas for a Lorentz Transformation in the previous section
+  \[
+    \tau_B = \gamma ( \tau_A - \beta x)
+  \]
+  and
+  \[
+    x_B = \gamma (x_A - \beta \tau_A)
+  \]
+  
+  Let us now generalize these equations as
+  \[
+    \begin{bmatrix} 
+      \tau_B \\
+      x_B
+    \end{bmatrix}
+    =
+    \begin{bmatrix} 
+      a & b \\
+      c & d
+    \end{bmatrix}
+    \begin{bmatrix} 
+      \tau_A \\
+      x_A
+    \end{bmatrix}
+  \]
+  
+  so we can express this as
+  \[
+    \tau_B = a\tau_A + bx_A
+  \]
+  and 
+  \[
+    x_b = c\tau_A + dx_A
+  \]
+  
+  Spacetime Intervals are defined as a combination of distances in both space and time. In Special Relativity, it is invariant. Therefore, we can conclude
+  \[
+    \tau_A^2 - x_A^2 = \tau_B^2 - x_B^2
+  \]
+  
+  If we substitute in \(a\tau_A + bx_A\) and \(c\tau_A + dx_A\)
+  \[
+    \tau_A^2 - x_A^2 = (a\tau_A + bx_A)^2 - (c\tau_A + dx_A)^2 \newline
+  \]
+  \[
+    \tau_A^2 - x_A^2 = (a^2 - c^2)\tau_A^2 + (2ab - 2cd)\tau_A x_A + (b^2 - d^2) x_A^2
+  \]
+  
+  By observation, the only way for the equations to be able to equal eachother is if
+  \[
+    (a^2 - c^2) = 1
+  \]
+  \[
+    (2ab - 2cd) = 0
+  \]
+  \[
+    (b^2 - d^2) = -1
+  \]
+  
+  or some variation of this combination. \newline
+  Let's let \(cosh(g)^2 - sinh(g)^2 = 1\) for \(a^2 - c^2 = 1\). \newline
+  Let's let \(cosh(f)^2 - sinh(f)^2 = 1\) for \(d^2 - b^2 = 1\). \newline
+  We can express \(cosh(g) = \frac{e^{-g} + e^{g}}{2}\) and \(sinh(g) = \frac{e^{-g} - e^{g}}{2}\) \newline
+  We can express \(cosh(f) = \frac{e^{-f} + e^{f}}{2}\) and \(sinh(f) = \frac{e^{-f} - e^{f}}{2}\) \newline
+  
+  Plugging these representations of a, b, c, and d into the equation \(2ab - 2cd = 0\) yields
+  \[
+    e^{f - g} = e^{g - f}
+  \]
+  Thus, f = g.
+\end{center}
 \newpage
 \section{Invariance of Spacetime Interval in Inertial Frames}
-The equation for the spacetime interval is given as
-\[
-  (\Delta s)^2 = \tau^2 - (\Delta x^2 + \Delta y^2 + \Delta z^2)
-\]
+\begin{center}
+  The equation for the spacetime interval is given as
+  \[
+    (\Delta s)^2 = \tau^2 - (\Delta x^2 + \Delta y^2 + \Delta z^2)
+  \]
+  
+  Let us hypothesize that the Spacetime Interval is invariant. We can then conclude
+  \[
+    (\Delta s)^2 = \tau_A^2 - (\Delta x_A^2 + \Delta y_A^2 + \Delta z_A^2) = \tau_B^2 - (\Delta x_B^2 + \Delta y_B^2 + \Delta z_B^2)
+  \]
+  
+  We can substitute equations from the Lorentz Transformation. I better get points for this typing my work into LaTeX is so painful.
 
-Let us hypothesize that the Spacetime Interval is invariant. We can then conclude
-\[
-  (\Delta s)^2 = \tau_A^2 - (\Delta x_A^2 + \Delta y_A^2 + \Delta z_A^2) = \tau_B^2 - (\Delta x_B^2 + \Delta y_B^2 + \Delta z_B^2)
-\]
-
-We can substitute equations from the Lorentz Transformation. I better get points for this typing my work into LaTeX is so painful.
-
-\[
-  (\Delta s)^2 = \tau_A^2 - (\Delta x_A^2 + \Delta y_A^2 + \Delta z_A^2) = (\gamma (\tau_A - \beta x_A))^2 - ((\gamma (x_A - \beta x_A))^2 + \Delta y_B^2 + \Delta z_B^2)
-\]
-
-For the sake of easily proving this, let's say that our velocity is in the x-direction. We then see \(\Delta y\) and \(\Delta z\) dissapear. We can then get
-\[
-  \tau^2 - \Delta x^2 = (\tau - \Delta x^2)(\gamma^2 - \gamma^2 \beta^2)
-\]
-
-When you plug in the original representation for \(\gamma\), we are given
-\[
-  \tau^2 - \Delta x^2 = \tau^2 - \Delta x^2
-\]
-
-Since this is true, we verify our hypothesis that the Spacetime Interval is invariant.
-
+  \[
+    (\Delta s)^2 = \tau_A^2 - (\Delta x_A^2 + \Delta y_A^2 + \Delta z_A^2) = (\gamma (\tau_A - \beta x_A))^2 - ((\gamma (x_A - \beta x_A))^2 + \Delta y_B^2 + \Delta z_B^2)
+  \]
+  
+  For the sake of easily proving this, let's say that our velocity is in the x-direction. We then see \(\Delta y\) and \(\Delta z\) dissapear. We can then get
+  \[
+    \tau^2 - \Delta x^2 = (\tau - \Delta x^2)(\gamma^2 - \gamma^2 \beta^2)
+  \]
+  
+  When you plug in the original representation for \(\gamma\), we are given
+  \[
+    \tau^2 - \Delta x^2 = \tau^2 - \Delta x^2
+  \]
+  
+  Since this is true, we verify our hypothesis that the Spacetime Interval is invariant.
+\end{center}
 \newpage
 \section{Inertial Clock Measuring Spacetime Interval Between Events}
 We know the Spacetime Interval equation as defined above.
@@ -385,49 +387,51 @@ We set \(\Delta t_B = 0\) because the events are occuring at the same time. Ther
 By showing that we can find some velocity \(\vec{v}\) where the two events occur at the same time from the ruler's reference frame, we can then state that it is possible to make this Spacetime interval ``space-like''. Remember, since time is the same \(\Delta t_B = 0\). As a result, there is always an inertial ruler to measure the space-like interval between two given events.
 \newpage
 \section{Velocity Addition Formula}
-Suppose we are given the following situation
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[width=100mm]{velocityaddition}\par
-  \caption{Two reference frames with a Dr. Dell as x moving with velocity}
-\end{figure}
-
-We previously found the Lorentz transformation as
-\[
-  \Delta t_B = \gamma (\Delta t_A - \frac{\vec{v}}{c^2} x_A)
-\]
-and
-\[
-  x_b = \gamma (x_A - \vec{v} \Delta t_A)
-\]
-We can use take the derivative of each equation relative to Dr. Dell to find \(dx_B\) and \(dt_B\)
-\[
-  \frac{d}{dx}(\Delta t_B) = \frac{d}{dx}(\gamma (\Delta t_A - \frac{\vec{v}}{c^2} x_A))
-\]
-\[
-  dt_B = \gamma (dt_A - \frac{\vec{v}}{c^2} dx_A)
-\]
-and
-\[
-  \frac{d}{dx}(x_b) = \frac{d}{dx}(\gamma (x_A - \vec{v} \Delta t_A))
-\]
-\[
-  dx_B = \gamma (dx_A - vdt_A)
-\]
-
-However, we can also state \(v_B = \frac{dx_B}{dt_B}\) and \(\vec{v} = v_c\) from diagram. Using this fact and substitution, we can get
-\[
-  v_B = \frac{v_A - \vec{v}}{1 - \frac{v_A \vec{v}}{c^2}}
-\]
-
-To find the velocity of our Dr. Dell from the reference frame (denoted by \(v_A\)), we can solve our equation and put it in terms of \(v_A\). This gives us
-\[
-  v_A = \frac{v_B + \vec{v}}{1 = \frac{v_B \vec{v}}{c^2}}
-\]
-If we definte \(\beta = \frac{v}{c}\) then we can rewrite the speed of Dr. Dell in reference frame A (where it's scaled by the factor of the speed of light c) as
-\[
-\beta_A = \frac{\beta_B + \beta_C}{1 + \beta_B \beta_C}
-\]
+\begin{center}
+  Suppose we are given the following situation
+  \begin{figure}[!htb]
+    \centering
+    \includegraphics[width=100mm]{velocityaddition}\par
+    \caption{Two reference frames with a Dr. Dell as x moving with velocity}
+  \end{figure}
+  
+  We previously found the Lorentz transformation as
+  \[
+    \Delta t_B = \gamma (\Delta t_A - \frac{\vec{v}}{c^2} x_A)
+  \]
+  and
+  \[
+    x_b = \gamma (x_A - \vec{v} \Delta t_A)
+  \]
+  We can use take the derivative of each equation relative to Dr. Dell to find \(dx_B\) and \(dt_B\)
+  \[
+    \frac{d}{dx}(\Delta t_B) = \frac{d}{dx}(\gamma (\Delta t_A - \frac{\vec{v}}{c^2} x_A))
+  \]
+  \[
+    dt_B = \gamma (dt_A - \frac{\vec{v}}{c^2} dx_A)
+  \]
+  and
+  \[
+    \frac{d}{dx}(x_b) = \frac{d}{dx}(\gamma (x_A - \vec{v} \Delta t_A))
+  \]
+  \[
+    dx_B = \gamma (dx_A - vdt_A)
+  \]
+  
+  However, we can also state \(v_B = \frac{dx_B}{dt_B}\) and \(\vec{v} = v_c\) from diagram. Using this fact and substitution, we can get
+  \[
+    v_B = \frac{v_A - \vec{v}}{1 - \frac{v_A \vec{v}}{c^2}}
+  \]
+  
+  To find the velocity of our Dr. Dell from the reference frame (denoted by \(v_A\)), we can solve our equation and put it in terms of \(v_A\). This gives us
+  \[
+    v_A = \frac{v_B + \vec{v}}{1 = \frac{v_B \vec{v}}{c^2}}
+  \]
+  If we define \(\beta = \frac{v}{c}\) then we can rewrite the speed of Dr. Dell in reference frame A (where it's scaled by the factor of the speed of light c) as
+  \[
+    \beta_A = \frac{\beta_B + \beta_C}{1 + \beta_B \beta_C}
+  \]
+\end{center}
 \newpage
 \section{Doppler Shift}
 Consider a series of light pulses emitted from an inertial clock at regular time intervals (as measured by an inertial clock). We can use the invariance of the speed of light and the time dilatino effect to show that the frequency of pulses measured by another inertial clock moving either towards or away from the original inertial clock will either be red or blue shifted by the redshift or blueshift factor.
@@ -437,40 +441,41 @@ Consider the frequency of a light wave
   \lambda_S = \frac{c}{f_S}
 \]
 If we consider the reference frame of the moving inertial clock, it appears that the light pulses are travelling with a velocity \(\vec{v}\). Therefore we can express the displacement of the light pulse over the time to complete one wavelength as
-\[
-  \lambda_S + \vec{v}t = ct
-\]
-Solving for t yields us
-\[
-  t = \frac{\lambda_S}{c - \vec{v}}
-\]
-which, using the fact that \(\beta =  \frac{v}{c}\) can be expressed as
-\[
-  \frac{1}{f_S (1 - \beta)}
-\]
-
-Consider the time dilation equation in terms of \(\beta\)
-\[
-  t_0 = \frac{t}{\gamma}
-\]
-\[
-  t_0 = \frac{1}{f_0}
-\]
-\[
-  t_0 = \frac{1}{\sqrt{1 - \beta^2}}
-\]
-We can set all these equations equal to eachother and we get
-\[
-  t_0 = \frac{t}{\gamma} = \frac{1}{\gamma f_S (1-\beta)} = \frac{1}{f_0}
-\]
-Solving for \(f_0\) yields us
-\[
-  f_0 = f_S \sqrt{\frac{1 - \beta}{1 + \beta}}
-\]p
-
-This yields us our Doppler Shift Formulae
-\[
-  f' = \sqrt{\frac{1 \pm \beta}{1 \mp \beta}}
-\]
+\begin{center}
+  \[
+    \lambda_S + \vec{v}t = ct
+  \]
+  Solving for t yields us
+  \[
+    t = \frac{\lambda_S}{c - \vec{v}}
+  \]
+  which, using the fact that \(\beta =  \frac{v}{c}\) can be expressed as
+  \[
+    \frac{1}{f_S (1 - \beta)}
+  \]
+  
+  Consider the time dilation equation in terms of \(\beta\)
+  \[
+    t_0 = \frac{t}{\gamma}
+  \]
+  \[
+    t_0 = \frac{1}{f_0}
+  \]
+  \[
+    t_0 = \frac{1}{\sqrt{1 - \beta^2}}
+  \]
+  We can set all these equations equal to eachother and we get
+  \[
+    t_0 = \frac{t}{\gamma} = \frac{1}{\gamma f_S (1-\beta)} = \frac{1}{f_0}
+  \]
+  Solving for \(f_0\) yields us
+  \[
+    f_0 = f_S \sqrt{\frac{1 - \beta}{1 + \beta}}
+  \]
+  This yields us our Doppler Shift Formulae
+  \[
+    f' = \sqrt{\frac{1 \pm \beta}{1 \mp \beta}}
+  \]
+\end{center}
 
 \end{document}
